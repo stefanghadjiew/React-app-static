@@ -9,7 +9,7 @@ const Main = (props) => {
         return (
             <div className="container">
                 <Switch>
-                    <Route exact path="/" render={props => <Home
+                    <Route exact path="*" render={props => <Home
                     userId={userId} 
                     isLoggedIn={isLoggedIn} 
                     username={username}
