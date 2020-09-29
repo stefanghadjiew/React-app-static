@@ -44,7 +44,8 @@ class Authentication extends Component {
                 } else {
                     addUserToState(true,user,{has:false,message:""})
                     localStorage.setItem("token",user.token)
-                    localStorage.setItem("password",user.password)
+                    localStorage.setItem("username",user.username)
+                    localStorage.setItem("userId",user.id)
                     localStorage.setItem("email",user.email)
                     this.props.history.push("/")
                     console.log(user)

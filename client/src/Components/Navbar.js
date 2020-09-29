@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import { Link } from "react-router-dom"
-import Logo from "../images/cine-defaut-1.jpg"
+
 
  
 class Navbar extends Component {
@@ -11,6 +11,10 @@ class Navbar extends Component {
 
     logout() {
         const {addUserToState} = this.props
+        localStorage.removeItem("token")
+        localStorage.removeItem("userId")
+        localStorage.removeItem("username")
+        localStorage.removeItem("email")
         addUserToState(false,{},{has:false,message:""})
     
     }

@@ -18,35 +18,11 @@ class App extends Component {
         
         this.addUserToState=this.addUserToState.bind(this)
         this.logOutUser=this.logOutUser.bind(this)
-        this.checkForUser=this.checkForUser.bind(this)
-       
       }
     
-    checkForUser = async () => {
-      try {
-        const url =`https://fierce-spire-28320.herokuapp.com/api/auth/signin`
-        const email = localStorage.getItem("email");
-        const password = localStorage.getItem("password");
-        const res = await fetch (url,{
-          method:"POST",
-          headers : {
-            "Content-type" : "application/json"
-          },
-          body:JSON.stringify(email,password)
-        })
-        const user = await res.json()
-        this.setState({isLoggedIn:true,user,error:{has:false,message:""}})
-      } catch(err) {
-        this.setState({isLoggedIn:false,user:{},error:{has:true,message:err.message}})
-        console.log(err)
-      }
-     
-    }
-
-
     componentDidMount() {
-      if(localStorage.getItem("token") !== null && localStorage.getItem("userId") !== null) {
-         this.checkForUser()
+      if(localStorage.getItem("token") !== null && localStorage.getItem("email") !== null && localStorage.getItem("userId") && localStorage.getItem("username")) {
+        this.setState({isLoggedIn:true,user:{email:localStorage.getItem("email"),id:localStorage.getItem("userId"),token:localStorage.getItem("token"),username:localStorage.getItem("username")},error: {has:false,message:""}})
       } else {
         return
       }

@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/React-app-static/static/css/main.f305398f.chunk.css",
+    "main.js": "/React-app-static/static/js/main.bcaf3be4.chunk.js",
+    "main.js.map": "/React-app-static/static/js/main.bcaf3be4.chunk.js.map",
+    "runtime-main.js": "/React-app-static/static/js/runtime-main.900190b8.js",
+    "runtime-main.js.map": "/React-app-static/static/js/runtime-main.900190b8.js.map",
+    "static/js/2.b668d64d.chunk.js": "/React-app-static/static/js/2.b668d64d.chunk.js",
+    "static/js/2.b668d64d.chunk.js.map": "/React-app-static/static/js/2.b668d64d.chunk.js.map",
+    "index.html": "/React-app-static/index.html",
+    "precache-manifest.1a127b5b708ff5bf162d2023661ce847.js": "/React-app-static/precache-manifest.1a127b5b708ff5bf162d2023661ce847.js",
+    "service-worker.js": "/React-app-static/service-worker.js",
+    "static/css/main.f305398f.chunk.css.map": "/React-app-static/static/css/main.f305398f.chunk.css.map",
+    "static/js/2.b668d64d.chunk.js.LICENSE.txt": "/React-app-static/static/js/2.b668d64d.chunk.js.LICENSE.txt",
+    "static/media/cine-defaut-1.jpg": "/React-app-static/static/media/cine-defaut-1.704b37e1.jpg",
+    "static/media/index.css": "/React-app-static/static/media/wallhaven-oxz7gm.6d832e36.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.900190b8.js",
+    "static/js/2.b668d64d.chunk.js",
+    "static/css/main.f305398f.chunk.css",
+    "static/js/main.bcaf3be4.chunk.js"
+  ]
+}
