@@ -28,7 +28,7 @@ class Navbar extends Component {
                 <nav className="navbar navbar-expand-sm navbar-light" id="nav">
                     <div className="container-fluid">
                         <Link 
-                        to="/" 
+                        to="/React-app-static" 
                         className="navbar-brand">
                         Home
                         </Link>
