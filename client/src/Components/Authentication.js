@@ -47,7 +47,7 @@ class Authentication extends Component {
                     localStorage.setItem("username",user.username)
                     localStorage.setItem("userId",user.id)
                     localStorage.setItem("email",user.email)
-                    this.props.history.push("/")
+                    this.props.history.push("/React-app-static")
                     console.log(user)
                 }
                
